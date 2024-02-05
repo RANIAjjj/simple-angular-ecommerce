@@ -1,0 +1,14 @@
+<p>
+  product-details works!
+</p>
+<div class="card col-4" style="width: 18rem;" >
+<img [src]="p.imgURL" alt="">
+<div class="card-body">
+  <h5 class="card-title">{{p.name}} | Price:{{p.price}}</h5>
+  <p class="card-text">he card title and make up the bulk of the card's content.</p>
+  <a  routerLink="/cart" class="btn btn-primary">add to cart</a><br>
+
+
+  <app-rate [val]='p.rate'></app-rate>
+</div>
+</div>

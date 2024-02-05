@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Our Latest Products</h2>
+    <div class="row">
+        <div class="card col-4" style="width: 18rem;" *ngFor="let item of p">
+            <img [src]="item.imgURL" alt="">
+            <div class="card-body">
+                <h5 class="card-title">{{item.name}} | Price:{{item.price}}</h5>
+                <p class="card-text">he card title and make up the bulk of the card's content.</p>
+                <a [routerLink]="['/details' , item._id]" class="btn btn-primary">More Details</a><br>
+                
+                <app-rate [val]='item.rate' ></app-rate>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+.row{
+    display: flex;
+    align-content: center;
+    gap: 50px;
+}

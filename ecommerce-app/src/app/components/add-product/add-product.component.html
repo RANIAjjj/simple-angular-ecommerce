@@ -1,0 +1,23 @@
+
+<div class="container">
+<form action="">
+  <label for="ID">Product ID:</label>
+  <input [(ngModel)]="product._id" [ngModelOptions]="{standalone: true}" type="number" id="ID" class="form-control" >
+  <br>
+  <label for="name">Product Name:</label>
+  <input [(ngModel)]="product.name" [ngModelOptions]="{standalone: true}" type="text" id="name" class="form-control">
+  <br>
+  <label for="price">Product Price:</label>
+  <input [(ngModel)]="product.price" [ngModelOptions]="{standalone: true}" type="text" id="price" class="form-control">
+  <br>
+  <label for="img">Product Img:</label>
+  <input [(ngModel)]="product.imgURL" [ngModelOptions]="{standalone: true}" type="file" id="img" class="form-control">
+  <br>
+  <label for="rate">Product Rate:</label>
+  <input [(ngModel)]="product.rate" [ngModelOptions]="{standalone: true}" type="number" id="rate" class="form-control">
+  <br>
+  <br>
+
+  <button (click)="addProd()" type="submit">Add Product</button>
+</form>
+</div>
